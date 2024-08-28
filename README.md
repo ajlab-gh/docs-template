@@ -23,17 +23,17 @@ Follow these steps to quickly start working on this project:
      `source` to **Deploy from a branch** and your `branch`to **gh-pages**
      in the **/(root)** folder. Finally, `save` your changes.
 
-   ![GitHub Actions Page Permissions](images/page-permissions.PNG)
+   ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/pages-permissions.png)
 
 4. **Configure Gist**:
 
    - Click the **Settings** gear next to the **About** section
 
-     ![About Section Pages 1](images/about-setting1.png)
+     ![About Section Pages 1](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
 
    - Check `Use your GitHub Pages Website`, and Click `save your changes`.
 
-     ![About Section Pages 2](images/about-setting2.png)
+     ![About Section Pages 2](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
 
 5. **Customize your Markdown File(s)**:
    - In this template example, the `actions` and `pages` are configured to use

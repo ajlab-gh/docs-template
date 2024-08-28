@@ -74,10 +74,6 @@ Follow these steps to quickly set up and start working on this project:
 
    - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
 
-   - After editing or adding markdown files, commit and push your changes:
+   - Navigate to your Gist and see your finished product!
 
-     ```bash
-     git add .
-     git commit -m "<describe your changes>"
-     git push origin main
-     ```
+     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.png)

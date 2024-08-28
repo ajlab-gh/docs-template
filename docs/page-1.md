@@ -76,4 +76,4 @@ Follow these steps to quickly set up and start working on this project:
 
    - Navigate to your Gist and see your finished product!
 
-     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.png)
+     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.PNG)

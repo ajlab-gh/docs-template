@@ -1,32 +1,19 @@
-# Workflow
+# Workflow Overview
 
-The Workflow consists of five stages:
+The workflow includes the following stages:
 
-1. **Checkout Repository**: The latest version of our repository is
-checked out using the `actions/checkout` action.
-1. **Configure GitHub Pages**: This stage sets up GitHub Pages to deploy
-our documentation.
-1. **Install Python and MkDocs software**: Python 3.x is installed,
-followed by a list of MkDocs plugins required for building and deploying
-our documentation.
-1. **Build Docs**: The `mkdocs gh-deploy` command is run to build and
-deploy our documentation to GitHub Pages.
-1. **Triggering the workflow:**
-The workflow is triggered automatically whenever changes are pushed to the
-`main` branch or when a pull request is created. This ensures that our
-documentation is always up-to-date and reflects the latest changes in our
-codebase.
+1. **Checkout Repository**: Retrieves the latest version of the repository using the `actions/checkout` action.
+2. **Configure GitHub Pages**: Sets up GitHub Pages to deploy the documentation.
+3. **Install Python and MkDocs**: Installs Python 3.x and required MkDocs plugins.
+4. **Build Docs**: Runs `mkdocs gh-deploy` to build and deploy the documentation to GitHub Pages.
+5. **Triggering the Workflow**: Automatically triggers when changes are pushed to the `main` branch or when a pull request is created, ensuring the documentation is always current.
 
-**Concurrent builds:**
-To ensure that only one build is running at a time, we use GitHub Actions'
-concurrency feature. If multiple pushes occur simultaneously, the workflow
-will wait for the previous build to complete before starting a new one.
+## Concurrent Builds
 
-**Permissions:**
-The workflow has write permissions to the `contents`, `pages`, and
-`id-token` of our repository, allowing it to create and update files as
-needed.
+GitHub Actions' concurrency feature is used to ensure only one build runs at a time. If multiple pushes occur, subsequent builds will wait until the previous one finishes.
 
-By using GitHub Actions to automate our documentation build and deployment
-process, we can ensure that our documentation is always up-to-date,
-reliable, and easily accessible.
+## Permissions
+
+The workflow has write permissions for `contents`, `pages`, and `id-token`, allowing it to create and update files as needed.
+
+Using GitHub Actions to automate the documentation process ensures it is always up-to-date, reliable, and easily accessible.

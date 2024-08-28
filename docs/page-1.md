@@ -1,48 +1,54 @@
 # Getting Started
 
-Follow these steps to quickly start working on this project:
+Follow these steps to quickly set up and start working on this project:
 
 1. **Fork the Repository**:
-   - Start by [forking this repository](https://github.com/AJLab-GH/docs-templates/fork)
-     to your own GitHub account.
+   - Begin by [forking this repository](https://github.com/AJLab-GH/docs-templates/fork) to your GitHub account.
 
 2. **Clone the Repository**:
-
-   - Clone the forked repository to your local machine:
+   - Clone your forked repository to your local machine:
 
      ```bash
      git clone https://github.com/YOUR_USERNAME/docs-templates.git
      cd docs-templates
      ```
 
-3. **Configure your GitHub Pages**:
-   - In your `docs-templates` repository settings, navigate
-     to `Actions -> Pages` and ensure to set your `Build and Deployment`
-     `source` to **Deploy from a branch** and your `branch`to **gh-pages**
-     in the **/(root)** folder. Finally, `save` your changes.
+3. **Configure GitHub Pages**:
+   - In your `docs-templates` repository settings, go to **Actions -> Pages**.
+   - Set the **Build and Deployment** source to `Deploy from a branch`.
+   - Choose the `gh-pages` branch and set the folder to **/(root)**.
+   - **Save** your changes.
 
    ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/page-permissions.PNG)
 
 4. **Configure Gist**:
+   - In the repository's **About** section, click the **Settings** gear icon.
 
-   - Click the **Settings** gear next to the **About** section
+     ![About Section Settings](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
 
-     ![About Section Pages 1](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
+   - Enable the `Use your GitHub Pages Website` option and **Save** the changes.
 
-   - Check `Use your GitHub Pages Website`, and Click `save your changes`.
+     ![About Section Gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
 
-     ![About Section Pages 2](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
+5. **Customize Markdown Files**:
+   - The `actions` and `pages` in this template are set up to build your gist based on the structure defined in `mkdocs.yml` under the `nav` section.
 
-5. **Customize your Markdown File(s)**:
-   - In this template example, the `actions` and `pages` are configured to use
-     your **README.md** file.
-     - Open `README.md`.
-     - Make your changes
+     ```yaml
+     nav:
+       - Home:
+           - page-0.md
+       - Section 1:
+           - page-1.md
+       - Section 2:
+           - page-2.md
+     ```
 
-   - After making these changes, commit and push the updated workflow file:
+   - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
+
+   - After editing or adding markdown files, commit and push your changes:
 
      ```bash
      git add .
-     git commit -m "<depict the changes you made>"
+     git commit -m "<describe your changes>"
      git push origin main
      ```

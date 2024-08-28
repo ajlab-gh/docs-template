@@ -110,3 +110,8 @@ nav:
           - "page-1.md"
   - "Section 2":
           - "page-2.md"
+  - "Section 3":
+      - Overview: section-3/section-3-overview.md
+      - Details:
+          - Subsection 1: section-3/details/subsection-1.md
+          - Subsection 2: section-3/details/subsection-2.md

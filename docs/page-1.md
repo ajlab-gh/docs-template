@@ -43,6 +43,35 @@ Follow these steps to quickly set up and start working on this project:
            - page-2.md
      ```
 
+   - The `nav` section is where you define the structure of your documentation site. You can create nested pages to organize your content into sections and subsections, providing a clear hierarchy for users to navigate. For example, to add nested subsections within a section, your `nav` might look like this:
+
+     ```yaml
+     nav:
+       - Home: index.md
+       - Section 1: page-1.md
+       - Section 2: page-2.md
+       - Section 3:
+           - Overview: section-3/overview.md
+           - Details:
+               - Subsection 1: section-3/details/subsection-1.md
+               - Subsection 2: section-3/details/subsection-2.md
+     ```
+
+   - In this example:
+     - `Section 3` contains an `Overview` page and a `Details` section with two subsections.
+     - Each entry under `nav` corresponds to a markdown file that you have created in the `docs/` directory.
+     - You can rename sections, subsections, and pages as needed to match your documentation structure.
+
+   - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
+
+   - After editing or adding markdown files, commit and push your changes:
+
+     ```bash
+     git add .
+     git commit -m "<describe your changes>"
+     git push origin main
+     ```
+
    - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
 
    - After editing or adding markdown files, commit and push your changes:

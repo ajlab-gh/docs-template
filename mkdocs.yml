@@ -105,8 +105,8 @@ plugins:
 
 nav:
   - "Home":
-          - "index.md"
-  - "Getting Started":
-          - "getting-started.md"
-  - "Workflow":
-          - "workflow.md"
+          - "page-0.md"
+  - "Section 1":
+          - "page-1.md"
+  - "Section 2":
+          - "page-2.md"

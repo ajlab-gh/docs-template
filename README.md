@@ -1,83 +1,76 @@
-# docs-template
+# Docs Template
 
 ## Getting Started
 
-Follow these steps to quickly start working on this project:
+Follow these steps to quickly set up and start working on this project:
 
 1. **Fork the Repository**:
-   - Start by [forking this repository](https://github.com/AJLab-GH/docs-templates/fork)
-     to your own GitHub account.
+   - Begin by [forking this repository](https://github.com/AJLab-GH/docs-templates/fork) to your GitHub account.
 
 2. **Clone the Repository**:
-
-   - Clone the forked repository to your local machine:
+   - Clone your forked repository to your local machine:
 
      ```bash
      git clone https://github.com/YOUR_USERNAME/docs-templates.git
      cd docs-templates
      ```
 
-3. **Configure your GitHub Pages**:
-   - In your `docs-templates` repository settings, navigate
-     to `Actions -> Pages` and ensure to set your `Build and Deployment`
-     `source` to **Deploy from a branch** and your `branch`to **gh-pages**
-     in the **/(root)** folder. Finally, `save` your changes.
+3. **Configure GitHub Pages**:
+   - In your `docs-templates` repository settings, go to **Actions -> Pages**.
+   - Set the **Build and Deployment** source to `Deploy from a branch`.
+   - Choose the `gh-pages` branch and set the folder to **/(root)**.
+   - **Save** your changes.
 
    ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/page-permissions.PNG)
 
 4. **Configure Gist**:
+   - In the repository's **About** section, click the **Settings** gear icon.
 
-   - Click the **Settings** gear next to the **About** section
+     ![About Section Settings](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
 
-     ![About Section Pages 1](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
+   - Enable the `Use your GitHub Pages Website` option and **Save** the changes.
 
-   - Check `Use your GitHub Pages Website`, and Click `save your changes`.
+     ![About Section Gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
 
-     ![About Section Pages 2](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
+5. **Customize Markdown Files**:
+   - The `actions` and `pages` in this template are set up to build your gist based on the structure defined in `mkdocs.yml` under the `nav` section.
 
-5. **Customize your Markdown File(s)**:
-   - In this template example, the `actions` and `pages` are configured to use
-     your **README.md** file.
-     - Open `README.md`.
-     - Make your changes
+     ```yaml
+     nav:
+       - Home:
+           - page-0.md
+       - Section 1:
+           - page-1.md
+       - Section 2:
+           - page-2.md
+     ```
 
-   - After making these changes, commit and push the updated workflow file:
+   - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
+
+   - After editing or adding markdown files, commit and push your changes:
 
      ```bash
      git add .
-     git commit -m "<depict the changes you made>"
+     git commit -m "<describe your changes>"
      git push origin main
      ```
 
-**Workflow:**
+## Workflow Overview
 
-The Workflow consists of five stages:
+The workflow includes the following stages:
 
-1. **Checkout Repository**: The latest version of our repository is
-checked out using the `actions/checkout` action.
-1. **Configure GitHub Pages**: This stage sets up GitHub Pages to deploy
-our documentation.
-1. **Install Python and MkDocs software**: Python 3.x is installed,
-followed by a list of MkDocs plugins required for building and deploying
-our documentation.
-1. **Build Docs**: The `mkdocs gh-deploy` command is run to build and
-deploy our documentation to GitHub Pages.
-1. **Triggering the workflow:**
-The workflow is triggered automatically whenever changes are pushed to the
-`main` branch or when a pull request is created. This ensures that our
-documentation is always up-to-date and reflects the latest changes in our
-codebase.
+1. **Checkout Repository**: Retrieves the latest version of the repository using the `actions/checkout` action.
+2. **Configure GitHub Pages**: Sets up GitHub Pages to deploy the documentation.
+3. **Install Python and MkDocs**: Installs Python 3.x and required MkDocs plugins.
+4. **Build Docs**: Runs `mkdocs gh-deploy` to build and deploy the documentation to GitHub Pages.
+5. **Triggering the Workflow**: Automatically triggers when changes are pushed to the `main` branch or when a pull request is created, ensuring the documentation is always current.
 
-**Concurrent builds:**
-To ensure that only one build is running at a time, we use GitHub Actions'
-concurrency feature. If multiple pushes occur simultaneously, the workflow
-will wait for the previous build to complete before starting a new one.
+### Concurrent Builds
 
-**Permissions:**
-The workflow has write permissions to the `contents`, `pages`, and
-`id-token` of our repository, allowing it to create and update files as
-needed.
+GitHub Actions' concurrency feature is used to ensure only one build runs at a time. If multiple pushes occur, subsequent builds will wait until the previous one finishes.
 
-By using GitHub Actions to automate our documentation build and deployment
-process, we can ensure that our documentation is always up-to-date,
-reliable, and easily accessible.
+### Permissions
+
+The workflow has write permissions for `contents`, `pages`, and `id-token`, allowing it to create and update files as needed.
+
+Using GitHub Actions to automate the documentation process ensures it is always up-to-date, reliable, and easily accessible.

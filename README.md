@@ -29,11 +29,11 @@ Follow these steps to quickly start working on this project:
 
    - Click the **Settings** gear next to the **About** section
 
-     ![About Section Pages 1](images/about-setting1.PNG)
+     ![About Section Pages 1](images/about-setting1.png)
 
    - Check `Use your GitHub Pages Website`, and Click `save your changes`.
 
-     ![About Section Pages 2](images/about-setting2.PNG)
+     ![About Section Pages 2](images/about-setting2.png)
 
 5. **Customize your Markdown File(s)**:
    - In this template example, the `actions` and `pages` are configured to use

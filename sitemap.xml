@@ -5,4 +5,14 @@
          <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://ajlab-gh.github.io/docs-template/getting-started/</loc>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ajlab-gh.github.io/docs-template/workflow/</loc>
+         <lastmod>2024-08-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>

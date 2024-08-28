@@ -88,8 +88,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: AJLab-GH
-      repo: ftnt-demo
+      user: ajlab-gh
+      repo: docs-template
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.tasklist:
@@ -102,3 +102,11 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
+
+nav:
+  - "Home":
+          - "index.md"
+  - "Getting Started":
+          - "getting-started.md"
+  - "Workflow":
+          - "workflow.md"

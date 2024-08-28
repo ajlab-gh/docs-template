@@ -23,7 +23,7 @@ Follow these steps to quickly start working on this project:
      `source` to **Deploy from a branch** and your `branch`to **gh-pages**
      in the **/(root)** folder. Finally, `save` your changes.
 
-   ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/pages-permissions.png)
+   ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/page-permissions.PNG)
 
 4. **Configure Gist**:
 

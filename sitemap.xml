@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://ajlab-gh.github.io/docs-template/</loc>
+         <loc>https://ajlab-gh.github.io/docs-template/page-0/</loc>
          <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ajlab-gh.github.io/docs-template/getting-started/</loc>
+         <loc>https://ajlab-gh.github.io/docs-template/page-1/</loc>
          <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://ajlab-gh.github.io/docs-template/workflow/</loc>
+         <loc>https://ajlab-gh.github.io/docs-template/page-2/</loc>
          <lastmod>2024-08-28</lastmod>
          <changefreq>daily</changefreq>
     </url>

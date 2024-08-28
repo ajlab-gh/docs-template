@@ -74,6 +74,10 @@ Follow these steps to quickly set up and start working on this project:
      git push origin main
      ```
 
+   - Navigate to your Gist and see your finished product!
+
+     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.png)
+
 ## Workflow Overview
 
 The workflow includes the following stages:

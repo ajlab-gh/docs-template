@@ -1,24 +1,68 @@
 # docs-template
 
-**Welcome!**
+## Getting Started
 
-This MkDocs project uses GitHub Actions to automate the build and
-deployment of our documentation. Here's an overview of the workflow:
+Follow these steps to quickly start working on this project:
+
+1. **Fork the Repository**:
+   - Start by [forking this repository](https://github.com/AJLab-GH/docs-templates/fork)
+     to your own GitHub account.
+
+2. **Clone the Repository**:
+
+   - Clone the forked repository to your local machine:
+
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/docs-templates.git
+     cd docs-templates
+     ```
+
+3. **Configure your GitHub Pages**:
+   - In your `docs-templates` repository settings, navigate
+     to `Actions -> Pages` and ensure to set your `Build and Deployment`
+     `source` to **Deploy from a branch** and your `branch`to **gh-pages**
+     in the **/(root)** folder. Finally, `save` your changes.
+
+   ![GitHub Actions Page Permissions](images/page-permissions.PNG)
+
+4. **Configure Gist**:
+
+   - Click the **Settings** gear next to the **About** section
+
+     ![About Section Pages 1](images/about-setting1.PNG)
+
+   - Check `Use your GitHub Pages Website`, and Click `save your changes`.
+
+     ![About Section Pages 2](images/about-setting2.PNG)
+
+5. **Customize your Markdown File(s)**:
+   - In this template example, the `actions` and `pages` are configured to use
+     your **README.md** file.
+     - Open `README.md`.
+     - Make your changes
+
+   - After making these changes, commit and push the updated workflow file:
+
+     ```bash
+     git add .
+     git commit -m "<depict the changes you made>"
+     git push origin main
+     ```
 
 **Workflow:**
 
-Our workflow consists of five stages:
+The Workflow consists of five stages:
 
 1. **Checkout Repository**: The latest version of our repository is
 checked out using the `actions/checkout` action.
-2. **Configure GitHub Pages**: This stage sets up GitHub Pages to deploy
+1. **Configure GitHub Pages**: This stage sets up GitHub Pages to deploy
 our documentation.
-3. **Install Python and MkDocs software**: Python 3.x is installed,
+1. **Install Python and MkDocs software**: Python 3.x is installed,
 followed by a list of MkDocs plugins required for building and deploying
 our documentation.
-4. **Build Docs**: The `mkdocs gh-deploy` command is run to build and
+1. **Build Docs**: The `mkdocs gh-deploy` command is run to build and
 deploy our documentation to GitHub Pages.
-5. **Triggering the workflow:**
+1. **Triggering the workflow:**
 The workflow is triggered automatically whenever changes are pushed to the
 `main` branch or when a pull request is created. This ensures that our
 documentation is always up-to-date and reflects the latest changes in our
@@ -37,7 +81,3 @@ needed.
 By using GitHub Actions to automate our documentation build and deployment
 process, we can ensure that our documentation is always up-to-date,
 reliable, and easily accessible.
-
-```bash
-pre-commit install
-```

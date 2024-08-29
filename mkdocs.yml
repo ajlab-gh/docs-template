@@ -107,7 +107,7 @@ nav:
   - Home: "page-0.md"
   - Getting Started: "page-1.md"
   - Workflow Overview: "page-2.md"
-  - Section 3:
+  - Section 3 (example):
       - Overview: section-3/section-3-overview.md
       - Details:
           - Subsection 1: section-3/details/subsection-1.md

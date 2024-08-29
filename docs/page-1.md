@@ -19,16 +19,16 @@ Follow these steps to quickly set up and start working on this project:
    - Choose the `gh-pages` branch and set the folder to **/(root)**.
    - **Save** your changes.
 
-     ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/page-permissions.PNG){.center}
+     ![GitHub Actions Page Permissions](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/page-permissions.PNG)
 
 4. **Configure Gist**:
    - In the repository's **About** section, click the **Settings** gear icon.
 
-     ![About Section Settings](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png){.center}
+     ![About Section Settings](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting1.png)
 
    - Enable the `Use your GitHub Pages Website` option and **Save** the changes.
 
-     ![About Section Gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png){.center}
+     ![About Section Gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/about-setting2.png)
 
 5. **Customize Markdown Files**:
    - The `actions` and `pages` in this template are set up to build your gist based on the structure defined in `mkdocs.yml` under the `nav` section.
@@ -76,4 +76,4 @@ Follow these steps to quickly set up and start working on this project:
 
    - Navigate to your Gist and see your finished product!
 
-     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.PNG){.center}
+     ![gist](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/gist-page.PNG)

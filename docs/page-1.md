@@ -8,7 +8,7 @@ Follow these steps to quickly set up and start working on this project:
 2. **Clone the Repository**:
    - Clone your forked repository to your local machine:
 
-     ```bash
+     ```
      git clone https://github.com/YOUR_USERNAME/docs-templates.git
      cd docs-templates
      ```
@@ -33,7 +33,7 @@ Follow these steps to quickly set up and start working on this project:
 5. **Customize Markdown Files**:
    - The `actions` and `pages` in this template are set up to build your gist based on the structure defined in `mkdocs.yml` under the `nav` section.
 
-     ```yaml
+     ```
      nav:
        - Home:
            - page-0.md
@@ -45,9 +45,9 @@ Follow these steps to quickly set up and start working on this project:
 
    - The `nav` section is where you define the structure of your documentation site. You can create nested pages to organize your content into sections and subsections, providing a clear hierarchy for users to navigate. For example, to add nested subsections within a section, your `nav` might look like this:
 
-     ```yaml
+     ```
      nav:
-       - Home: page-0.md
+       - Home: index.md
        - Section 1: page-1.md
        - Section 2: page-2.md
        - Section 3:
@@ -66,7 +66,7 @@ Follow these steps to quickly set up and start working on this project:
 
    - After editing or adding markdown files, commit and push your changes:
 
-     ```bash
+     ```
      git add .
      git commit -m "<describe your changes>"
      git push origin main

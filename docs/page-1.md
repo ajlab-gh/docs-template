@@ -47,7 +47,7 @@ Follow these steps to quickly set up and start working on this project:
 
      ```yaml
      nav:
-       - Home: index.md
+       - Home: page-0.md
        - Section 1: page-1.md
        - Section 2: page-2.md
        - Section 3:

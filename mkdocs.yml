@@ -104,13 +104,10 @@ plugins:
       minify_html: true
 
 nav:
-  - "Home":
-          - "page-0.md"
-  - "Section 1":
-          - "page-1.md"
-  - "Section 2":
-          - "page-2.md"
-  - "Section 3":
+  - Home: "page-0.md"
+  - Getting Started: "page-1.md"
+  - Workflow Overview: "page-2.md"
+  - Section 3:
       - Overview: section-3/section-3-overview.md
       - Details:
           - Subsection 1: section-3/details/subsection-1.md

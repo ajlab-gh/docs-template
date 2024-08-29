@@ -33,7 +33,7 @@ theme:
     repo: fontawesome/brands/github
   features:
     - announce.dismiss
-    - content.action.view
+    - content.action.edit
     - content.code.annotate
     - content.code.copy
     # - content.tabs.link

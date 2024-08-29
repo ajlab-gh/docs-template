@@ -104,7 +104,7 @@ plugins:
       minify_html: true
 
 nav:
-  - Home: "page-0.md"
+  - Home: "index.md"
   - Getting Started: "page-1.md"
   - Workflow Overview: "page-2.md"
   - Section 3 (example):

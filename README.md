@@ -66,6 +66,10 @@ Follow these steps to quickly set up and start working on this project:
 
    - Rename sections and corresponding markdown files as needed. Ensure the `nav` entries in `mkdocs.yml` match your markdown file names.
 
+   - If you would like to augment your markdown with mkdocs specific features, a reference section can be found in the [Gist](https://ajlab-gh.github.io/docs-template/reference).
+
+     ![reference](https://raw.githubusercontent.com/ajlab-gh/docs-template/main/images/references.PNG)
+
    - After editing or adding markdown files, commit and push your changes:
 
      ```bash

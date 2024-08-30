@@ -137,6 +137,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Navigation Section
 nav:
   - Home: "index.md"
   - Getting Started: "page-1.md"

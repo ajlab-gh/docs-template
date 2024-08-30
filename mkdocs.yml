@@ -21,57 +21,80 @@ validation:
   omitted_files: warn
   absolute_links: warn
   unrecognized_links: warn
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ajlab-gh
 
-#extra_css: [extra.css]
-# extra_javascript: [extra.js]
-
+# Configuration
 theme:
   name: material
-  #custom_dir: docs/overrides
-  include_sidebar: false
-  icon:
-    repo: fontawesome/brands/github
+  custom_dir: material/overrides
   features:
     - announce.dismiss
+    - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
     # - content.tabs.link
     - content.tooltips
-    - header.autohide
+    # - header.autohide
+    # - navigation.expand
     - navigation.footer
-    # - navigation.indexes
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
     # - navigation.prune
-    # - navigation.sections
+    - navigation.sections
     - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
-    - navigation.path
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
+    # - toc.integrate
   palette:
-    - media: "(prefers-color-scheme: light)"
-      primary: black
-      accent: grey
-      scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      primary: grey
-      accent: black
-      scheme: slate
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
   font:
     text: Roboto
     code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
+# Plugins
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
+# Extensions
 markdown_extensions:
   - abbr
   - admonition
@@ -80,10 +103,18 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      toc_depth: "1-1"
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tilde
   - pymdownx.keys
   - pymdownx.magiclink:
       normalize_issue_symbols: true
@@ -92,23 +123,38 @@ markdown_extensions:
       repo: docs-template
   - pymdownx.mark
   - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
   - pymdownx.tasklist:
       custom_checkbox: true
-
-plugins:
-  - glightbox
-  - social
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
+  - pymdownx.tilde
 
 nav:
   - Home: "index.md"
   - Getting Started: "page-1.md"
   - Workflow Overview: "page-2.md"
-  - Section 3 (example):
-      - Overview: section-3/section-3-overview.md
-      - Details:
-          - Subsection 1: section-3/details/subsection-1.md
-          - Subsection 2: section-3/details/subsection-2.md
+  - Reference:
+    - reference/index.md
+    - Admonitions: reference/admonitions.md
+    - Annotations: reference/annotations.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Grids: reference/grids.md
+    - Icons, Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - Math: reference/math.md
+    - Tooltips: reference/tooltips.md

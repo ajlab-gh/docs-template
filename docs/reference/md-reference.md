@@ -9,9 +9,6 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
 - `# Heading 1`
 - `## Heading 2`
 - `### Heading 3`
-- `#### Heading 4`
-- `##### Heading 5`
-- `###### Heading 6`
 
 ### **Text Formatting:**
 

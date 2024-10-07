@@ -96,4 +96,4 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
 - Use `:emoji_name:` for emojis.
   - Example: `:smile:`
 
-[^1]: Footnote :smile:
+[^1]: Here is an example of a Footnote in action.

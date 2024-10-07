@@ -23,7 +23,7 @@ Before starting, you need to configure Git with your name, email, and other sett
 - **Set automatic push behavior** (so you don’t need to specify a remote every time):
 
   ```bash
-  git config --global push.default simple
+  git config --global --add --bool push.autoSetupRemote true
   ```
 
 ---

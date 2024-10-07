@@ -143,7 +143,7 @@ nav:
   - Getting Started: "page-1.md"
   - Workflow Overview: "page-2.md"
   - Markdown Reference: "page-3.md"
-  - Mkdocs Reference:
+  - MkDocs Reference:
     - reference/index.md
     - Admonitions: reference/admonitions.md
     - Annotations: reference/annotations.md

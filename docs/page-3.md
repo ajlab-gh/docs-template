@@ -1,8 +1,10 @@
-# Markdown Formatting and Syntax
+# Markdown Reference
 
 Markdown provides a wide range of formatting options beyond headings, bold, and code blocks. Here’s an exhaustive list of commonly used Markdown syntax:
 
-## **Headings:**
+## Markdown Syntax
+
+### **Headings:**
 
 - `# Heading 1`
 - `## Heading 2`
@@ -11,14 +13,14 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
 - `##### Heading 5`
 - `###### Heading 6`
 
-## **Text Formatting:**
+### **Text Formatting:**
 
 - **Bold**: `**bold**` or `__bold__`
 - *Italic*: `*italic*` or `_italic_`
 - ***Bold and Italic***: `***bold and italic***` or `___bold and italic___`
 - ~~Strikethrough~~: `~~strikethrough~~`
 
-## **Lists:**
+### **Lists:**
 
 - **Unordered List**: Use `-`, `*`, or `+` followed by a space.
   - `- Item 1`
@@ -35,12 +37,12 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
      - Subitem 1
   ```
 
-## **Blockquotes:**
+### **Blockquotes:**
 
 - Use `>` for blockquotes.
   - `> This is a blockquote.`
 
-## **Code:**
+### **Code:**
 
 - **Inline code**: `` `inline code` ``
 - **Code blocks**:
@@ -53,21 +55,21 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
   ```
   ```
 
-## **Horizontal Rule (Line Break):**
+### **Horizontal Rule (Line Break):**
 
 - `---` or `***` or `___` (three dashes, asterisks, or underscores)
 
-## **Links:**
+### **Links:**
 
 - `[Link text](URL)`
   - Example: `[Google](https://www.google.com)`
 
-## **Images:**
+### **Images:**
 
 - `![Alt text](image URL)`
   - Example: `![Logo](https://example.com/logo.png)`
 
-## **Tables:**
+### **Tables:**
 
 - Simple tables with pipes (`|`) and dashes (`-`).
 
@@ -77,36 +79,36 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
   | Row 1    | Row 2    |
   ```
 
-## **Task Lists (Checkboxes):**
+### **Task Lists (Checkboxes):**
 
 - `- [ ] Task not completed`
 - `- [x] Task completed`
 
-## **Escaping Characters:**
+### **Escaping Characters:**
 
 - Use a backslash (`\`) to escape special characters.
   - Example: `\*this is not italic\*`
 
-## **Automatic Links:**
+### **Automatic Links:**
 
 - `<https://example.com>` for automatic linking.
 
-## **Footnotes:**
+### **Footnotes:**
 
 - Create footnotes using `[^1]` and define the footnote at the bottom of the document.
   - Example: `Here is a footnote[^1].`
     `[^1]: Footnote text.`
 
-## **Emojis:**
+### **Emojis:**
 
 - Use `:emoji_name:` for emojis.
   - Example: `:smile:`
 
-## **HTML Support:**
+### **HTML Support:**
 
 - You can use raw HTML within Markdown for more control.
   - Example: `<strong>Bold using HTML</strong>`
 
-## **Task Prioritization (not in all Markdown parsers):**
+### **Task Prioritization (not in all Markdown parsers):**
 
 - Some implementations allow for task priority with tags like `[P1]`.

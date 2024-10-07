@@ -142,7 +142,7 @@ nav:
   - Home: "index.md"
   - Getting Started: "page-1.md"
   - Workflow Overview: "page-2.md"
-  - Markdown Reference: "page-3.md"
+  - Markdown Reference: "reference/md-reference.md"
   - MkDocs Reference:
     - reference/index.md
     - Admonitions: reference/admonitions.md
@@ -160,4 +160,4 @@ nav:
     - Lists: reference/lists.md
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
-  - Git Reference: "page-4.md"
+  - Git Reference: "reference/git-reference.md"

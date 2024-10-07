@@ -47,11 +47,6 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
   ```
   ```
 
-  multi-line code block
-
-  ```
-  ```
-
 ### **Horizontal Rule (Line Break):**
 
 - `---` or `***` or `___` (three dashes, asterisks, or underscores)

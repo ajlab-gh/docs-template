@@ -1,4 +1,4 @@
-# **GitHub Beginner's Cheatsheet for VSCode**
+# **Git Reference**
 
 This cheatsheet covers the essential Git commands for beginners using **Visual Studio Code**.
 

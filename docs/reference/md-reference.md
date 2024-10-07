@@ -95,12 +95,3 @@ Markdown provides a wide range of formatting options beyond headings, bold, and 
 
 - Use `:emoji_name:` for emojis.
   - Example: `:smile:`
-
-### **HTML Support:**
-
-- You can use raw HTML within Markdown for more control.
-  - Example: `<strong>Bold using HTML</strong>`
-
-### **Task Prioritization (not in all Markdown parsers):**
-
-- Some implementations allow for task priority with tags like `[P1]`.

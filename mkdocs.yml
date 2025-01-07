@@ -161,3 +161,4 @@ nav:
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
   - Git Reference: "reference/git-reference.md"
+  - VI CheatSheet: "reference/vi-reference.md"
